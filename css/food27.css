@@ -1,0 +1,284 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+nav{
+background-color: aliceblue;
+width:100%;
+height: 60px;
+display:flex;
+align-items: center; 
+justify-content: space-between;
+padding: 15px 20px;
+position: fixed;
+top: 0;
+z-index: 1;
+
+}   
+.menu a{
+text-decoration: none;
+text-transform: uppercase;
+font-family: fantasy;
+font-weight: bold;
+color: rgb(255 24 133);
+margin: 0 14px;
+text-shadow: 1px 1px 1px white;
+/*  margin-left: 721px; */
+/* margin-left: 630px; */
+/* padding-left: 484px; */
+} 
+.banner{
+background:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(https://www.foodpanda.com/wp-content/uploads/2023/02/about-foodpanda.jpeg);
+width:100%;
+height: 500px;
+background-position: center;
+background-size: cover;
+}
+.banner h1{
+text-align: center;
+font-size: 50px;
+background: magenta;
+color: white;
+position: relative;
+top: 170px;
+margin: auto;
+width: 40%;
+}
+/* .news{
+    background:#4d4090 url(http://ayushmanup.in/assets/images/city_background.png) no-repeat top right;
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+}
+.news marquee{
+color: white;
+font-size: 15px;
+padding-top: 15px;
+font-family: monospace;
+} */
+.about{
+
+    width:100%;
+    height: 500px;
+    text-align: center;
+    padding: 150px 200px;
+}
+.about h2{
+font-size: 35px;
+font-family:cursive ;
+text-transform: uppercase;
+text-shadow: 3px 3px 3px peru;
+margin-bottom: 14px;
+
+
+}
+.about p{
+letter-spacing: 2px;
+word-spacing: 2px;
+font-family: cursive;
+line-height: 39px;
+margin-bottom: 25px;
+
+
+
+}
+.about button{
+width: 198px;
+height: 44px;
+background: linear-gradient(to right,black,grey);
+color: white;
+font-size: 16px;
+font-weight: bold;
+border: none;
+border-radius: 9px;
+
+}
+.press{
+background:url(../image/rest.jpeg) ;
+width:100% ;
+height:500px ;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+color: white;
+font-weight: bold;
+
+}
+.press h2{
+font-size: 35px;
+font-family: cursive;
+font-weight: bold;
+font-style: italic;
+text-transform: uppercase;
+padding-top: 100px;
+}
+.press p{
+
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: cursive;
+    line-height: 39px;
+    margin-bottom: 25px;
+
+    }
+    .press button{
+        width: 198px;
+        height: 44px;
+        background: linear-gradient(to right,black,grey);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 9px;
+        
+        }
+
+
+
+
+
+
+.team{
+    background:url(../image/foo.jpeg) ;
+    width:100% ;
+    height:500px ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+font-weight: bold;
+}
+.team h2{
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 120px;
+    }
+    .team p{
+    
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-family: cursive;
+        line-height: 39px;
+        margin-bottom: 25px;
+        }
+        .team button{
+            width: 198px;
+            height: 44px;
+            background: linear-gradient(to right,black,grey);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 9px;
+            
+            }
+.blog{
+    background:url(../image/end.jpeg) ;
+    width:100% ;
+    height:500px ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+font-weight: bold;
+
+}
+.blog h2{
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 120px;
+    }
+    .blog p{
+    
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-family: cursive;
+        line-height: 39px;
+        margin-bottom: 25px;
+        }
+        .blog button{
+            width: 198px;
+            height: 44px;
+            background: linear-gradient(to right,black,grey);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 9px;
+            
+            }
+/* .press{
+    background:url(../image/im4.jpg) ;
+    width:100% ;
+    height:500px ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+footer{
+    padding: 40px 120px;
+    
+    }
+    .first{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    }
+    .first1{
+    display: flex;
+    /* margin-left: 684px; */
+    }
+    .first-1 span{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 400;
+    margin-left: 684px;
+    }
+    .second{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    
+    }
+    .second div{
+    width: 200px;
+    }
+    .second h4{
+        font-weight: lighter;
+        color: rgb(22,22,22);
+    }
+    .second a{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: gray;
+    font-size: 0.9rem;
+    }
+    .second img{
+        width: 137px;
+        height: 40px;
+        margin-top: 11px;
+        cursor: pointer;
+    
+    }
+    .third{
+    
+        padding: 10px;
+        color: gray;
+        font-size: 20px;
+    }

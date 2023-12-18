@@ -1,0 +1,43 @@
+body{
+    background: pink;
+}
+.a{
+
+
+    background: green;
+    font-size: 40px;
+    color: aquamarine;
+    text-align: center;
+
+}
+.b{
+    
+    border: 4px solid;
+    width: 200px;
+    height: 300px;
+    background: white;
+    float: left;
+    margin-top: 64px;
+    margin: 32px;
+    box-shadow: 3px 3px 3px;
+    background-color: azure;
+
+    
+
+}
+.c{
+
+    border: 4px solid;
+    width: 200px;
+    height: 300px;
+    background:pink;
+    float: left;
+    margin-top: 64px;
+    margin: 32px;
+    box-shadow: 3px 3px 3px;
+    background-color: yellowgreen;
+    
+    
+
+}
+

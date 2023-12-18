@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="part3">
+        <i class="fa-solid fa-calendar-days" ></i>
+          <span id="date display" > SUNDAY 25 Nov, 2023 </span>
+       
+        <i class="fa-solid fa-clock"></i>
+        <span id="clockDisplay">11:17:53 AM</span>
+      </div>
+      <div class="part">
+        <div class="part2">
+          <a href=""><i class="fa-solid fa-reply" style="color: white"></i></a>
+        </div>
+        <div class="part2">
+          <a href=""
+            ><i class="fa-solid fa-sitemap" style="color: white"></i
+          ></a>
+        </div>
+        <div class="part2">
+          <a href=""
+            ><i class="fa-solid fa-volume-high" style="color: white"></i
+          ></a>
+        </div>
+        <div class="part2">
+          <a href="" style="color: white">+A</a>
+        </div>
+        <div class="part2">
+          <a href="" style="color: white">A</a>
+        </div>
+        <div class="part2">
+          <a href="" style="color: white">-A</a>
+        </div>
+        <!-- <div class="part2">
+          <a href=""
+            ><i
+              class="fa-duotone fa-circle-half-stroke"
+              style="color: white"
+            ></i
+          ></a> -->
+        
+        <div class="part4">
+          <form>
+            <!-- <img
+                src="data:image/jpeg;base64,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">
+                alt="" width="25px"height="20px"
+              />Select language
+            </option>
+            <option>english</option>
+            <option>hindi</option>
+          </select>
+          <option> -->
+            <select name="">
+              <option> Selectlanguage</option>
+              <option>English</option>
+              <option>Hindi</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--topbar end-->
+    <div class="header">
+      <img src="http://ayushmanup.in/assets/images/pmjay_logo-new.png" alt="" />
+      <div class="text">
+        <p>आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना</p>
+        <p>
+          <br />
+          <br /><p1>Ayushman Bharat - Pradhan Mantri Jan Arogya Yojna</p1>
+        </p>
+      </div>
+
+      <div class="d">
+        <img src="http://ayushmanup.in/assets/images/gov.png" alt="" />
+      </div>
+    </div>
+    <!--header end-->
+    <div class="menu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Knowledge hub</a></li>
+        <li><a href="">Hospital</a></li>
+        <li><a href="">Media</a></li>
+        <li><a href="">Tenders</a></li>
+        <li><a href="">Download</a></li>
+        <li><a href="">contact us</a></li>
+        <li><a href="">login</a></li>
+      </ul>
+    </div>
+    <!--menu end-->
+    <div class="banner">
+      <img
+        src="http://ayushmanup.in/assets/images/slider/slider1.jpg"
+        alt=""
+        width="100%"
+      />
+    </div>
+    <div class="news">
+      <marquee>
+        Tender on GEM Portal for the selection of an Agency for Social Media
+        Management and Support In Other Key IEC activities for State Health
+        Agency, Uttar Pradesh through GeM Portal.
+      </marquee>
+    </div>
+
+    <div class="mus">
+      <div class="rich" style="border-top-left-radius: 12px">
+        <h1>62517410</h1>
+        <p1>NUMBER OF BENEFICARIES</p1>
+
+        <img src="http://ayushmanup.in/assets/images/beneficaries.png" alt="" />
+      </div>
+      <div class="rich">
+        <h1>40771247</h1>
+        <p1>GOLDEN CARD ISSUED</p1>
+        <img src="http://ayushmanup.in/assets/images/goldencards.png" alt="" />
+      </div>
+      <div class="rich" style="border-top-right-radius: 12px">
+        <h1>3656</h1>
+        <p1>EMPANELLED HOSPITALS</p1>
+        <img src="http://ayushmanup.in/assets/images/hospital.png" alt="" />
+      </div>
+      <br />
+      <br />
+      <div class="rich" style="border-bottom-left-radius: 12px">
+        <h1>2707999</h1>
+        <p1>TOTAL PRE- AUTHORIZATIONS </p1>
+        <img
+          src="http://ayushmanup.in/assets/images/ClaimsInitiated.png"
+          alt=""
+        />
+      </div>
+      <div class="rich">
+        <h1>2548289</h1>
+        <p1>TOTAL CLAIMS SUBMITTED</p1>
+        <img src="http://ayushmanup.in/assets/images/patients1.png" alt="" />
+      </div>
+      <div class="rich" style="border-bottom-right-radius: 12px">
+        <h1>91.04%</h1>
+        <p1>CLAIMS SETTLED (%)</p1>
+        <img
+          src="http://ayushmanup.in/assets/images/claimssettled.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="r" style="text-align: justify">
+          <h4>Welcome to <br /></h4>
+          <h3>AB-PMJAY Uttar Pradesh</h3>
+          <br />
+          <div class="text" style="text-align: justify; font-size: 100%">
+            <p3
+              >Ayushman Bharat will have a defined benefit cover of Rs. 5 lakh
+              per family per year. This cover will take care of almost all
+              secondary care and most of tertiary care procedures. To ensure
+              that nobody is left out (especially women, children and elderly)
+              there will be no cap on family size and age in the scheme. The
+              benefitcover will also include pre and post-hospitalisation
+              expenses. All pre-existing conditions will be covered from day one
+              of the policy. A defined transport allowance per hospitalization
+              will also be paid to the beneficiary.</p3
+            >
+          </div>
+          <div class="button">
+            <p4>Learn More</p4>
+          </div>
+        </div>
+        <div class="column">
+          <div class="main">
+            <div class="yogi">
+              <img src="http://ayushmanup.in/assets/images/cm.jpg" alt="" />
+              <p6
+                ><h2>Shri Yogi Adityanath</h2>
+                Hon'ble Chief Minister, Uttar Pradesh</p6
+              >
+            </div>
+          </div>
+          <div class="main2">
+            <div class="braj">
+              <img src="http://ayushmanup.in/assets/images/hm.jpg" alt="" />
+              <p7>
+                <h6>Shri Brajesh Pathak</h6>
+                Hon’ble Cabinet Minister Medical and Health, Family Welfare
+                Maternal and Child Welfare Department, Uttar Pradesh</p7
+              >
+            </div>
+          </div>
+          <div class="main3">
+            <div class="Minister">
+              <img src="http://ayushmanup.in/assets/images/PS_HM.jpg" alt="" />
+              <p>
+                PARTH SARTHI SEN <br />
+                SHARMA, I.A.S.
+              </p>
+              <h6>Principal Secretary</h6>
+              <h5>Uttar Pradesh</h5>
+            </div>
+            <div class="Minister2">
+              <img
+                src="http://ayushmanup.in/assets/images/sangeeta-singh.jpg"
+                alt=""
+              />
+              <p>MRS. SANGEETA SINGH, <br />I.A.S.</p>
+              <h6>CEO, Ayushman Bharat</h6>
+              <br />
+              <h5>Uttar Pradesh</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div">
+      <div
+        class="border"
+        style="
+          height: 50px;
+          width: 100%;
+          background-color: steelblue;
+          border-top-right-radius: 11px;
+          border-top-left-radius: 11px;
+          text-align: center;
+        "
+      >
+        <marquee>CIRCULARS</marquee>.
+      </div>
+      <div
+        class="line"
+        style="height: 275px; width: 100%; background-color: #f5f5dc; border-bottom: solid; border-bottom-color: steelblue;padding: 15px;"
+      >
+      
+        <div class="first">
+          <marquee scrollamount="10" direction="up" height="250px">
+            <h1 style="color: #ffcd00">circulars / advisory</h1>
+            ⬤ Memorandum regarding booking of blood and blood component | Date :
+            03.01.2022 <br />
+
+            ⬤ Introduction of new features in TMS related to Health Benefit
+            Packages | Date : 19.05.2021 <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत SECC
+            2011 डेटा में सम्मलित अपात्र परिवारों को डाटा से हटाए जाने के
+            सम्बन्ध में | <br />
+            ⬤ आयुष्मान भारत प्रधान मंत्री जन आरोग्य योजना के अंतर्गत पात्र
+            लाभार्थियों का गोल्डन कार्ड बनाये जाने हेतु नेशनल हेल्थ अथॉरिटी ,
+            भारत सरकार द्वारा UTIITSL का चयन किये जाने के सम्बन्ध में | <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत आबद्ध
+            चिकित्सालयो में कार्यरत आरोग्य मित्र के मानदेय की दरो का पुनः
+            निरर्ध्रण के सम्बंध में |<br />
+            ⬤ Continuation of empanelment of hospital in Ayushman Bharat Pradhan
+            Mantri Jan Arogya Yojna | Date : 27.01.2021<br />
+            ⬤ Extension Of Policy period with effect from 23rd September, 2020
+            till 31St March, 2021 | 28.09.2020<br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत DIU में
+            कार्यरत कार्मिकों के स्थानीय यात्रा व्यय की प्रतिपूर्ति के सम्बन्ध
+            में | 31.07.2020<br />
+            ⬤ अधिसूचित निजी चिकित्सा संस्थानों / चिकित्सा महाविद्यालयों द्वारा
+            कोविद- 19 से संक्रमित रोगियों के उपचार पर व्यय धनराशि की प्रतिपूर्ति
+            के सम्बन्ध में| 31.07.2020 <br />⬤ Manual on Biomedical Waste
+            Management in Health Care Facilities <br />⬤ Regarding High end
+            Radio logical Diagnostic Packages | (852/08-07-2020)<br />
+            ⬤ Regarding Processing of Claims initiated by Public Hospitals
+            |(25-06-2020) <br />⬤ Regarding Protocol for Performing
+            Hysterectomies in AB-PMJAY Beneficiaries |(30-06-2020)<br />
+            ⬤ कोरोना वायरस से संक्रमित ABPMJAY के लाभार्थियों के उपचार हेतु दरो
+            का निर्धारण एवम् उनके उपचार पर हुए व्यय के प्रतिपूर्ति के सम्बन्ध
+            में |(29-05-2020)<br />
+            ⬤ Regarding Uploading Claim Documents on AB-PMJAY Portal.<br />⬤
+            Regarding Norms of Uploading Photographs in AB-PMJAY Claims.<br />
+            ⬤ Regarding Penalty Against Money Charged From Beneficiaries by
+            Empanelled Hospitals. <br />⬤ Clinical Protocols for Hysterectomy
+            Package. <br />⬤ Guideline for recoveries and other actions posts
+            confirmation of fraud and other irregularities.<br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत
+            लाभार्तियो के उपचार हेतु सर्जिकल डिस्पोजेबल एव अन्य डिस्पोजेबल किट्स
+            हेतु शुल्क लिए जाने के सम्बन्ध में | (23/ Date- 10.01.2019)<br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना अन्तर्गत सूचीबदध
+            चिकित्सालयों द्वारा स्पेशलिटी हटाये जाने / स्पेशलिटी कम किये जाने के
+            अनुरोध के सम्बंध में |(2057 / Date-19-11-2019)<br />
+            ⬤ आयुष्मान भारत - प्रधान मंत्री जन आरोग्य योजनान्तर्गत सूचीबद्ध
+            चिकित्सालयों द्वारा स्वतः सूची बद्धता हटाये जाने अनुरोध के सम्बन्ध
+            में | (2032 / Date-15-11-2019)<br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना अन्तर्गत आबद्ध
+            चिकित्सालयों का इन्फ्रास्ट्रक्चर एवं मैन पावर ऑडिट किये जाने के
+            सम्बन्ध में | (2016 / Date-13-11-2019)
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <div class="div">
+      <div
+        class="border"
+        style="
+          height: 50px;
+          /* width: 100%; */
+          background-color: steelblue;
+          border-top-right-radius: 11px;
+          border-top-left-radius: 11px;
+          text-align: center;
+        "
+      >
+        <marquee>IMPORTANT GOVERNMENT ORDERS</marquee>
+      </div>
+      <div
+        class="line"
+        style="height: 275px; width: 100%; background-color: #f5f5dc ; border-bottom: solid; border-bottom-color: steelblue;padding: 15px;"
+      >
+        <div class="second">
+          <marquee scrollamount="10" direction="up" height="250px">
+            <h1 style="color: #ffcd00">government orders</h1>
+
+            ⬤ आयुष्मान भारत प्रधान मंत्री जन आरोग्य योजना के अंतर्गत आबद्ध
+            सरकारी चिकित्सालयो द्वारा प्राप्त क्लेम धनराशि के व्यय के सम्बन्ध
+            में दिशा निर्देश| (28-03-2022) <br />
+            ⬤ अंत्योदय कार्ड धारको को “मुख्यमंत्री जन आरोग्य अभियान” से
+            आच्‍छादित किये जाने के सम्बन्ध में| (715/23-07-2021) <br />
+            ⬤ आयुष्‍मान भारत-प्रधानमंत्री जन आरोग्‍य योजना एवं मुख्‍यमंत्री जन
+            आराेग्‍य अि‍भियान से आच्‍छादित '' गोल्‍डन कार्ड के संंबंध में |
+            (GO-332/25.02.2021) <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत आबद्ध
+            चिकित्सालयो में कार्यरत आरोग्य मित्र के मानदेय की दरो का पुनः
+            निरर्ध्रण के सम्बंध में | (GO-1215/16-Oct-2020 ) <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत शिकायत
+            निवारण समितियो का गठन तथा शिकायत निवारण प्रक्रिया के सम्बन्ध में
+            (08-मार्च-2019) <br />
+            ⬤ GO-1865 आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत
+            राजकीय चिकित्सालयो द्वारा क्लेम धनराशि के उपयोग हेतु दिशा निर्देश |
+            (GO-1865/14-Dec-2018 ) <br />
+            ⬤ आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना के अंतर्गत लाभार्थियों
+            को सरकारी चिकित्सालय में आकर्षित करने हेतु बेहतर सुविधा उपलब्ध कराये
+            जाने के सम्बन्ध में| (431/16-03-2020) <br />
+            ⬤ सामाजिक, आर्थिक एवम जाति जनगणना २०११ में छुटे हुए पात्र लाभार्तियो
+            को आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना का लाभ दिये जाने के
+            सम्बन्ध में | (285/20-02-2019) <br />
+            ⬤ ग्राम उम्भा, सोनभद्र के चिहित पात्र परिवारों तथा एस०ई०सी०सी० २०११
+            में छुटे हुए पात्र परिवारों को “मुख्यमंत्री जन आरोग्य अभियान” में
+            सम्मिलित किये जाने के सम्बन्ध में | (1669/28-11-2019) <br />
+            ⬤ प्रधान मंत्री जन आरोग्य योजना के अन्तर्गत गोल्डन कार्ड बनाने हेतु
+            सामुदायिक स्वास्थ्य केन्द्रों एवम् हेल्थ एंड वैलनेस सेंटर पर कैंप
+            आयोजित किये जाने के सम्बन्ध में | (224/19-12-2019) <br />
+            ⬤ राजकीय चिकित्सालयों में आयुष्मान लाभार्तियो को बेहतर सुविधा उपलब्ध
+            कराये जाने के सम्बन्ध में | (223/19-12-2019) <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना में शामिल किये गए
+            असत्यापित परिवारों का पुनः सर्वेक्षण किये जाने के सम्बन्ध में |
+            (222/19-12-2019) <br />
+            ⬤ राजकीय चिकित्सालयों में आयुष्मान लाभार्तियो को बेहतर सुबिधा उपलब्ध
+            कराये जाने के सम्बन्ध में | (221/18-12-2019) <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना का दूसरा चरण दिनाक
+            २३ सितंबर २०१९ से प्रारंभ होने के सम्बन्ध में |(1544/21.08.2019)
+            <br />
+            ⬤ आयुष्मान भारत : नेशनल हेल्थ प्रोटेक्शन मिशन के अन्तर्गत कार्मिको
+            की तैनाती के सम्बंध में (2212/5-6-2018 /27.07.2018) <br />
+            ⬤ आयुष्मान भारत : नेशनल हेल्थ प्रोटेक्शन मिशन के अन्तर्गत आयुष्मान
+            मित्र के चयन एवम् तैनाती के सम्बंध में |(1236/16.08.2018) <br />
+            ⬤ आयुष्मान भारत : राष्ट्रीय स्वास्थ्य सुरक्षा मिशन के के अन्तर्गत
+            अनुबंधित चिकित्सालयों में आईटी किट स्थापित किये जाने के सम्बन्ध में
+            | (1365/30.08.2018) <br />
+            ⬤ आयुष्मान भारत : नेशनल हेल्थ प्रोटेक्शन मिशन को उत्तर प्रदेश में
+            लागू किये जाने के संबन्ध में | (1366/13.09.2018) <br />
+            ⬤ आयुष्मान भारत : नेशनल हेल्थ प्रोटेक्शन मिशन को उत्तर प्रदेश में
+            लागू किये जाने के संबन्ध में | (1555/20.12.2018) <br />
+            ⬤ आयुष्मान भारत – प्रधान मंत्री जन आरोग्य योजना के लाभार्थी परिवारों
+            को प्लास्टिक कार्ड वितरित किये जाने के सम्बन्ध में
+            |(2024/07.02.2019) <br />
+            ⬤ आयुष्मान भारत : नेशनल हेल्थ प्रोटेक्शन मिशन के अन्तर्गत
+            चिकित्सालयो को इम्पैनल किये जाने के सम्बंध में दिशा निर्देश
+            |(2128/12.07.2018) <br />
+            ⬤ केंद्र सहायतित “प्रधानमंत्री राष्ट्रीय स्वास्थ्य सुरक्षा मिशन”
+            योजना को उत्तर प्रदेश में लागू किये जाने के सम्बन्ध में
+            |(933/08.06.2018) <br />
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <div class="div">
+      <div
+        class="border"
+        style="
+          height: 50px;
+          /* width: 100%; */
+          background-color: #ff7f50;
+          border-top-right-radius: 11px;
+          border-top-left-radius: 11px;
+          text-align: center;
+        "
+      >
+        <marquee>QUICK LINKS</marquee>
+      </div>
+      <div
+        class="line"
+        style="height: 275px; width: 100%; background-color: #f5f5dc; border-bottom: solid; border-bottom-color: steelblue;padding: 15px;"
+      >
+        <div class="third">
+          <marquee scrollamount="10" direction="up" height="250px">
+            # How to Apply Ayushman Card<br />
+
+            # BIS Login<br />
+
+            # TMS Login<br />
+
+            # PM-JAY Support Centre<br />
+
+            # Hospital Empanelment<br />
+
+            # AM I Eligible (MERA)<br />
+
+            # Grevance Portal<br />
+
+            # Common Service Centre (CSC)<br />
+
+            # Directorate of Health UP<br />
+
+            # IEC Materials at PMJAY Website<br />
+
+            # Register Yourself on SETU<br />
+
+            icon_registration<br />
+            Online Hospital Application<br />
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+    <div class="online">
+      <p>Online Hospital Application</p>
+      <div class="apply"><button>Apply now</button></div>
+      <div class="part1">
+        <img src="http://ayushmanup.in/assets/images/reg.svg" alt="">
+      </div>
+    </div>
+    <div class="latest">
+      <p>Latest News / Events</p>
+      <div class="lust"></div>
+      <div class="img">
+        <img src="http://ayushmanup.in/assets/images/news2.svg" alt="" />
+      </div>
+      <div class="ayush">
+        <span style="color: red; font-weight: lighter; text-align: justify"
+          >Ayushman Bharat
+        </span>
+        will have a defined benefit cover of Rs. 5 lakh per family per year.
+        This cover will take care of almost all secondary care and most of
+        tertiary care procedures. To ensure that nobody is left out (especially
+        women, children and elderly) there will be no cap on family size and age
+        in the scheme. The benefit cover will also include pre and
+        post-hospitalisation expenses. All pre-existing conditions will be
+        covered from day one of the policy. A defined transport allowance per
+        hospitalization will also be paid to the beneficiary.
+      </div>
+    </div>
+    <div class="gallery">
+      <p>Our Gallery</p>
+      <div class="photo">
+        <!-- <img src="http://ayushmanup.in/assets/images/gallery/pm3.jpeg" alt="" width="245px" height="180px"
+        > -->
+        <iframe
+          width="245"
+          height="180"
+          src="https://www.youtube.com/embed/-_2bVB7V60Y?si=kC_2RQhUS5_67ZLE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="photo">
+        <img
+          src="http://ayushmanup.in/assets/images/gallery/pm3.jpeg"
+          alt=""
+          width="245px"
+          height="180px"
+        />
+      </div>
+      <div class="photo">
+        <img
+          src="http://ayushmanup.in/assets/media/press3.jpg"
+          alt=""
+          width="245px"
+          height="180px"
+        />
+      </div>
+    </div>
+    <div class="mark">
+      <marquee scrollamount="15" direction="left">
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g5.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g7.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g2.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g4.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g3.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g1.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g6.jpg" alt="" />
+        <img src="http://ayushmanup.in/assets/images/gov_logo/g8.jpg" alt="" />
+      </marquee>
+    </div>
+    <div class="footer">
+      <div class="f1">
+        <p>Our <span style="color: white">Location</span></p>
+        <div class="loc">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1779.8405741002184!2d80.95019!3d26.850092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd08b4012ebb%3A0xf26f221ff94875d!2sSACHIS!5e0!3m2!1sen!2sus!4v1700896201337!5m2!1sen!2sus" width="250px" height="174px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+        
+      </div>
+      <div class="f2">
+        <p>Quick <span style="color: white">Navigation</span></p>
+        <div class="fcontainer">
+          <div class="bis asj">
+            <a href="#"> >&nbsp; BIS Login</a><br />
+            <a href="#"> > &nbsp;Mera App</a><br />
+            <a href="#"> >&nbsp;Hospital Login</a><br />
+            <a href="#"> >&nbsp;Government Orders</a><br />
+          </div>
+          <div class="tms asj">
+            <a href="#">>&nbsp;TMS Login</a><br />
+            <a href="#">>&nbsp;CSC Center</a><br />
+            <a href="#">>&nbsp;Find Hospitals</a><br />
+            <a href="#">>&nbsp;State Employee Cashless </a><br />
+            <a href="#">&nbsp;Treatment Scheme</a><br />
+          </div>
+        </div>
+      </div>
+      <div class="f3">
+        <p><span style="color: white">Stay</span> In Touch</p>
+      </div>
+      <div class="again">
+        <ul>
+          <li>
+            <span style="color: #ff8c00">SACHIS</span><br />
+            4th Floor, Navchetna Kendra<br />
+            10 Ashok Marg, Hazratganj, Lucknow, Uttar<br />
+            Pradesh-226001
+          </li>
+          <br />
+          <li>☏ 1800 1800 4444</li>
+          <li>✉ uprsby@yahoo.co.in</li>
+          <li>www.ayushmanup.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="last">
+      <p>
+        © 2019 State Agency for Comprehensive Health and Integrated Services
+        (SACHIS). All Rights Reserved.
+      </p>
+      <p8 style="color: #cecece"
+        >VISITOR NO-<span style="color: #ff4500">8597292</span></p8
+      >
+    </div>
+  </body>
+</html>
